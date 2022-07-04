@@ -1,0 +1,20 @@
+{
+  "name": "grant-holt-robot",
+  "version": "0.0.1",
+  "description": "Twitter bot for selecting and publishing Photo52 themes",
+  "main": "grant-holt-robot.js",
+  "scripts": {
+    "start": "concurrently --names 'grant_holt_robot,second_module' --prefix-colors '#EE7B30,#9F86C0' --kill others \"node grant-holt-robot.js\" \"node second-module.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@manchestermelly",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "concurrently": "^6.3.0",
+    "dayjs": "^1.10.7",
+    "fs": "*",
+    "twit": "^2.2.11",
+    "underscore": "^1.13.1"
+  }
+}
